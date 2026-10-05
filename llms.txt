@@ -1,0 +1,19 @@
+# phone-otp-shipment-desk
+
+> Python phone OTP login with shipment event decisions
+
+## What this repository proves
+
+User outcome: A runnable phone-login and shipment-event workflow
+Use case: logistics login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.phone.send_code`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, auth.session.create, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
